@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Hora</title>
+    <style>
+        
+        *{font-family: 'Lato';font-size: 30px;padding: 0;margin: 0;box-sizing: border-box;}
+        html,body{height: 100%;}
+        p{font-size: 10pt; color: white;margin: 10px 0;}
+        h1{
+            margin: 20px 0;
+        }
+        h3{
+            margin-top: 15px;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+        .center{
+            background-color: white;
+            width: 600px;
+            height: 410px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 1px 1px 2px black;
+        }
+        .img-wraper{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 15px auto;
+            border: 2px solid #5f5f5f;
+        }
+        button{
+            font-size: 20px;
+            display: blcok;
+            flex: none;
+            position: relative;
+            right: -240px;
+            bottom: 50px;
+            border-radius: 5px;
+            border: 1px solid #5f5f5f;
+            color: white;
+            background-color: cornflowerblue;
+            padding: 4px;
+            cursor: pointer;
+        }
+        h3{color: black;}
+    </style>
+</head>
+<body>
+    <section>
+        <h1><strong>Hora do dia</strong></h1>
+        <div class="center">
+            <h3></h3>
+            <div class="img-wraper"></div>
+            <button onclick="atualize()">Atualizar</button>
+        </div><!--center-->
+        <footer><p>João Moraes</p></footer>
+    </section>
+    
+    <script>
+
+        verificaH();
+        function atualize(){
+            window.document.location.reload();
+        }
+
+        function verificaH() {
+                let hor = new Date().getHours();
+                let min = new Date().getMinutes();
+                document.querySelector('.center h3').innerHTML = `Agora são ${hor}:${min}`;
+                mudaBG(hor);
+        }
+        function mudaBG(hora){
+            var bgS = document.querySelector('section');
+            var bgI = document.querySelector('.img-wraper');
+
+            if((hora > 6) && (hora <= 12)){
+                bgI.style.background = 'url(images/manha.jpg)';
+                bgS.style.background = '#d9e445';
+            }else if((hora > 12) && (hora <= 19)){
+                bgI.style.background = 'url(images/dia.jpg)';
+                bgS.style.background = '#07aab6';
+            }else{
+                bgI.style.background = 'url(images/noite.jpg)';
+                bgS.style.background = '#312819';
+            }
+        }
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>
