@@ -1,0 +1,82 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "Roboto";outline: 0;}
+html,body{height: 100%;}
+.w50{width: 50%;}
+.w100{width: 100%;}
+.clear{clear: both;}
+.right{float: right;}
+.left{float: left;}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(103, 130, 148);
+    height: 100%;
+}
+header h1{
+    padding-bottom: 15px;
+    color: black;
+    font-weight: normal;
+}
+div.painel{
+    border: 1px solid #344d36;
+    width: 650px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #4d4d4d;
+    padding: 30px 25px;
+}
+.inputs{
+    width: 50%;
+    float: left;
+}
+div.input_wrapper{
+    font-size: 24px;
+    min-width: 260px;
+    margin: 10px 0;
+    text-align: left;
+    float: left;
+    display: flex;
+    flex-direction: column;
+        
+}
+input{
+    font-size: 24px;
+    width: 140px;
+    float: left;
+}
+
+button[type=submit]{
+    font-size: 20px;
+    padding: 5px;
+    width: 300px;
+    color: white;
+    background-color: cadetblue;
+    border: 1px solid #4d4d4d;
+    line-height: 50px;
+    position: relative;
+    right: 70px;
+    top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contador{
+    width: 600px;
+    height: 80px;
+    border: 1px solid #344d36;
+    border-radius: 10px;
+    line-height: 80px;
+    padding: 0 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.contador p{
+    height: 80px;
+    scroll-behavior: auto;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Contador</h1>
+        </header>
+        <div class="painel">
+            <div class="inputs">
+                <div class="input_wrapper">
+                    <label for="init">Começar por:</label>
+                    <input type="number" name="init" id="init" min="0" max="999" value="0">
+                </div>
+                <div class="input_wrapper">
+                    <label for="fn">Fim:</label>
+                    <input type="number" name="fn" id="fn" min="0" max="999" value="0">
+                </div>
+                <div class="input_wrapper">
+                    <label for="pss">Passo:</label>
+                    <input type="number" name="pss" id="pss" min="1" max="999" value="1">
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input_wrapper">
+                    <button type="submit" id="calc" onclick="contar()">Calcular</button>
+                </div>
+                <div class="input_wrapper">
+                    <button type="submit" id="calc" onclick="location.reload()">Limpar</button>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="contador">
+                <p></p>
+            </div><!--contador-->
+
+        </div><!--painel-->
+        <footer></footer>
+    </section>
+
+    <script src="js/functions.js"></script>
+</body>
+</html>
