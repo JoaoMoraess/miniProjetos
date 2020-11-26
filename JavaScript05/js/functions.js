@@ -14,7 +14,7 @@ function addNumero(){
     inputN.focus();
 }
 function calcNum(ns){
-    let calcs = [];
+    let calcs = {};
     let soma = 0;
     ns.sort(function(a,b){return a - b});
     for(c in ns){
@@ -22,24 +22,24 @@ function calcNum(ns){
             
         }
 
-    calcs[0] = ns[ns.length - 1];
-    calcs[1] = ns[0];
-    calcs[2] = ns.length;
-    calcs[3] = soma;
-    calcs[4] = (calcs[3] / calcs[2]);
+    calcs.maior = ns[ns.length - 1];
+    calcs.menor = ns[0];
+    calcs.total = ns.length;
+    calcs.soma = soma;
+    calcs.media = (calcs.soma / calcs.total);
     return calcs;
 }
 
 function mostrarNs(){
-    arrNumeros = [maior='',menor='',total='',soma='',media=''];
+    arrNumeros = {maior:'',menor:'',total:'',soma:'',media:''};
     
     arrNumeros = calcNum(numeros);
     
     mostN.innerHTML = `
-    <p>Total de Numeros Digitados: ${arrNumeros[2]}</p>
-    <p>O menor Numero Digitado foi: ${arrNumeros[1]}</p>
-    <p>O maior Numero digitado foi: ${arrNumeros[0]}</p>
-    <p>A soma entre eles é: ${arrNumeros[3]}</p>
-    <p>A media entre os valores é ${arrNumeros[4]}</p>
+    <p>Total de Numeros Digitados: ${arrNumeros.total}</p>
+    <p>O menor Numero Digitado foi: ${arrNumeros.menor}</p>
+    <p>O maior Numero digitado foi: ${arrNumeros.maior}</p>
+    <p>A soma entre eles é: ${arrNumeros.soma}</p>
+    <p>A media entre os valores é ${arrNumeros.media}</p>
     `;
 }
