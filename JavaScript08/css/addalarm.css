@@ -1,0 +1,61 @@
+.adicionarAlarme {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    position: absolute;
+    top: 100%;
+}
+
+/**/
+.header2 {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.adicionarAlarme__header2__horas > input[type=time] {
+    width: 265px;
+    height: 50px;
+    font-size: 5rem;
+    overflow: visible;
+    border: 0;
+    text-align: center;
+    background: transparent;
+    color: white;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display:none; 
+}
+.mainAddAlarm{
+    width: 100%;
+    height: 300px;
+    background-color: #5a595955;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+.addFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.addFooter button{
+    font-size: 20px;/*mudar para rem depois*/
+    background-color: transparent;
+    border: 0;
+    color: #6017be;
+    outline: 0;
+    cursor: pointer;
+}
+

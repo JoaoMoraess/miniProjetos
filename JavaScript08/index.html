@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addalarm.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <section class="alarmes">
+        <header class="header">
+            <div class="header__alarmDay">
+            <h1>Alarmes ativados</h1>
+            <h2>day</h2> 
+            </div><!--cabecalho__alarmeDia-->
+            <div class="header__config">
+                <span class="header__config--add"><i class="fas fa-plus"></i></span>
+                <span class="header__config--points"><i class="fas fa-ellipsis-v"></i></span>
+            </div><!--header__config-->
+        </header><!--cabecalho-->
+        <main class="principal">
+            <div class="principal__alarmWraper">
+                <div class="principal__alarmWraper__hour">
+                    <h2>04:12</h2>
+                </div><!--principal__alarmeWaper__hora-->
+                <div class="principal__alarmWraper__date">
+                    <h2>day, hour, mouth</h2>
+                    <div class="principal_alarmWraper__date__togle">
+                        <div class="principal_alarmWraper__date__togle__circle"></div>
+                    </div><!--principal_alarmWraper__date__togle-->
+                </div><!--principal__alarmeWaper__togle-->
+            </div><!--principal__alarmeWaper-->
+
+            <div class="principal__alarmWraper">
+                <div class="principal__alarmWraper__hour">
+                    <h2>04:12</h2>
+                </div><!--principal__alarmeWaper__hora-->
+                <div class="principal__alarmWraper__date">
+                    <h2>day, hour, mouth</h2>
+                    <div class="principal_alarmWraper__date__togle">
+                        <div class="principal_alarmWraper__date__togle__circle"></div>
+                    </div><!--principal_alarmWraper__date__togle-->
+                </div><!--principal__alarmeWaper__togle-->
+            </div><!--principal__alarmeWaper-->
+        </main><!--principal-->
+        <footer class="rodape">
+            <nav>
+                <ul>
+                    <li><a href="#">Alarme</a></li>
+                    <li><a href="#">Relogio mundial</a></li>
+                    <li><a href="#">Cronômetro</a></li>
+                    <li><a href="#">Temporizador</a></li>
+                </ul>
+            </nav>
+        </footer><!--rodape-->
+    </section>
+    <section class="adicionarAlarme">
+        <header class="header2">
+            <div class="adicionarAlarme__header2__horas">
+                <input type="time" name="alarmHM" id="alarmHM" value="00:00">
+            </div><!--adicionarAlarme__header__horas-->
+        </header>
+        <main class="mainAddAlarm">
+
+        </main>
+        <footer class="addFooter">
+            <button id="cancelar" onclick="back()">Cancelar</button>
+            <button id="salvar">Salvar</button>
+        </footer>
+    </section><!--adicionarAlarme-->
+    <script src="js/functions.js" defer></script>
+</body>
+</html>

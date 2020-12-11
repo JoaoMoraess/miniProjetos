@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+:root {
+    font-size: 62.5%;
+}
+html,body {
+    height: 100%;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.alarmes {
+    background-color: black;
+    height: 100%;
+    transition: .5s;
+}
+.header {
+    padding: 40px 2%;
+}
+.header__alarmDay {
+    text-align: center;
+    height: 110px;
+}
+.header__alarmDay h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 2.6rem;
+    padding-bottom: 10px;
+}
+.header__alarmDay h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #ccc;
+}
+.header__config {
+    width: 100%;
+    text-align: right;
+}
+.header__config span {
+    color: white;
+    padding: 0 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.principal {
+    padding: 0 2%;
+}
+.principal__alarmWraper {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #5a595955;
+    padding: 30px 20px;
+    color: #999999;
+    display: flex;
+    margin: 10px 0;
+}
+.principal__alarmWraper__hour {
+    width: 50%;
+}
+.principal__alarmWraper__date {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.principal__alarmWraper__hour > h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.principal__alarmWraper__date > h2{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.principal_alarmWraper__date__togle {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    
+}
+.principal_alarmWraper__date__togle__circle {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+/*footer*/
+
+.rodape {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+}
+.rodape nav{
+    overflow: hidden;
+    
+}
+.rodape ul{
+    padding: 10px 0;
+    display: flex;
+    overflow-x: auto;
+}
+.rodape li{
+    display: inline;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #999999;
+    border-bottom: 2px dashed #6017be;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.rodape li:first-of-type a{
+    color: #6e30c0;
+}
+
+
+
+
+
